@@ -9,13 +9,13 @@ A simple terminal-based Car Rental and Bank Management system written in C++. Th
 This project demonstrates strong use of object-oriented programming, modular design, file handling, password hashing using libsodium, and Makefile for build automation.
 📁 Project Structure
 
-.
-├── main.cpp               # Main entry point
-├── banksystem.h/.cpp      # Banking system logic
-├── System.h/.cpp          # Car rental system logic
-├── config.h               # Helper for config parsing and password hashing
-├── config.ini             # Configuration file (not included in this repo by default)
-├── Makefile               # Compilation instructions
+    .
+    ├── main.cpp               # Main entry point
+    ├── banksystem.h/.cpp      # Banking system logic
+    ├── System.h/.cpp          # Car rental system logic
+    ├── config.h               # Helper for config parsing and password hashing
+    ├── config.ini             # Configuration file (not included in this repo by default)
+    ├── Makefile               # Compilation instructions
 
 ✅ Features
 Bank Management System
