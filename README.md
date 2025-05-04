@@ -63,26 +63,26 @@ You need the following libraries installed:
 
 On Debian-based systems:
 
-sudo apt update
-sudo apt install g++ libsodium-dev libmariadb-dev libmariadbcpp-dev
+    sudo apt update
+    sudo apt install g++ libsodium-dev libmariadb-dev libmariadbcpp-dev
 
 🔧 Build
 
 Use the provided Makefile to compile:
 
-make main        # Compiles main.cpp to 'main'
+    make main        # Compiles main.cpp to 'main'
 
 You can also compile manually:
 
-g++ -std=c++11 main.cpp System.cpp banksystem.cpp -o main -lsodium -lmariadbcpp -lmariadb
+    g++ -std=c++11 main.cpp System.cpp banksystem.cpp -o main -lsodium -lmariadbcpp -lmariadb
 
 🧹 Clean build files
 
-make clean
+    make clean
 
 🚀 Run the App
 
-./main
+    ./main
 
 You'll be prompted to choose between:
 
@@ -105,22 +105,23 @@ Each system then provides its own menu.
 
 If using a config file (like for storing DB settings or system info), create a config.ini file:
 
-[database]
-user = youruser
-password = yourpass
-host = localhost
+    [database]
+    user = youruser
+    password = yourpass
+    host = localhost
 
 Use loadIniConfig("config.ini") to read it.
-🧠 Code Highlights
+
+Code Highlights
 Colorful Header Output
 
-void displayHeader(const string& title) {
-    setColor(34);
-    cout << "========...\n";
-    setColor(33);
-    cout << title << "\n";
-    setColor(0);
-}
+    void displayHeader(const string& title) {
+        setColor(34);
+        cout << "========...\n";
+        setColor(33);
+        cout << title << "\n";
+        setColor(0);
+    }
 
 Password Hashing
 
