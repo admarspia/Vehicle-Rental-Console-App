@@ -25,9 +25,9 @@ class BankSystem {
    config = loadIniConfig("config.ini");
    
    try {
-    std::string db_url = config["database"]["url"] ;
-    std::string db_user  = config["database"]["user"];
-    std::string db_password = config["database"]["password"];
+    std::string db_url = config["bankdb"]["url"] ;
+    std::string db_user  = config["bankdb"]["user"];
+    std::string db_password = config["bankdb"]["password"];
     Driver* driver = mariadb::get_driver_instance();
     conn  = std::unique_ptr<Connection>  (driver->connect(db_url,db_user, db_password));
    }catch(SQLException &e) {
