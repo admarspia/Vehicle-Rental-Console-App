@@ -20,9 +20,7 @@ class System {
  public:
   System () {
   try {
-   std::string db_url = "jdbc:mariadb://localhost:3306/CarRentalDb";
-   std::string db_user = "root";
-   std::string db_password = "ey0p0l0gy0s@s0ph0r";
+
 
    Driver* driver = sql::mariadb::get_driver_instance();
    conn = std::unique_ptr<Connection> (driver->connect(db_url,db_user,db_password));
