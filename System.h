@@ -20,9 +20,9 @@ class System {
  public:
   System () {
   try {
-    std::string db_url = config["bankdb"]["url"] ;
-    std::string db_user  = config["bankdb"]["user"];
-    std::string db_password = config["bankdb"]["password"];
+    std::string db_url = config["cardb"]["url"] ;
+    std::string db_user  = config["cardb"]["user"];
+    std::string db_password = config["cardb"]["password"];
 
    Driver* driver = sql::mariadb::get_driver_instance();
    conn = std::unique_ptr<Connection> (driver->connect(db_url,db_user,db_password));
