@@ -3,9 +3,8 @@
 #include <iostream>
 #include <mariadb/conncpp.hpp>
 #include <memory>
-#include <cstdint> // for the unsignd int 32 bit
+#include <cstdint> 
 #include <string>
-#include <ctime> 
 #include <limits>
 #include <iomanip>
 #include "helper.h"
