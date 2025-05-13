@@ -44,7 +44,7 @@ Car Rental System
 
 Shared
 
-    Command-line user interface with colored output
+    Command-line user interface 
 
     Input validation and error handling
 
