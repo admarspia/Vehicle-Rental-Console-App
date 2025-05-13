@@ -112,17 +112,6 @@ If using a config file (like for storing DB settings or system info), create a c
 
 Use loadIniConfig("config.ini") to read it.
 
-Code Highlights
-Colorful Header Output
-
-    void displayHeader(const string& title) {
-        setColor(34);
-        cout << "========...\n";
-        setColor(33);
-        cout << title << "\n";
-        setColor(0);
-    }
-
 Password Hashing
 
 std::string hashPassword(const std::string& password);
