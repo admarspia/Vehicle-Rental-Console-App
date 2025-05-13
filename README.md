@@ -17,7 +17,7 @@ This project demonstrates strong use of object-oriented programming, modular des
     ├── config.ini             # Configuration file (not included in this repo by default)
     ├── Makefile               # Compilation instructions
 
-✅ Features
+Features
 Bank Management System
 
     Create new bank accounts
